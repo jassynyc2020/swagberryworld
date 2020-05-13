@@ -1,5 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: midnightblue;
+}
+
+.theatre {
+  border-radius: 20px;
+  text-decoration-color: pink;
+  margin: 50px;
 }
 
 h1 {
@@ -9,22 +21,29 @@ h1 {
   text-shadow: pink;
   font-size: 100px;
   color: white;
-  margin: 700px;
 }
 
 .bio {
   font-size: 40px;
   color: white;
-  background-color: pink;
+  background-color: fuchsia;
   border-radius: 20px;
-  margin: 70px;
+  padding: 40px;
+  margin: 50px;
 }
 
-div {
-  width: 300px;
-  border: 15px solid white;
-  padding: 50px;
-  margin: 20px;
+.talent-list {
+}
+
+button {
+  background-color: fuchsia;
+  border: none;
+  color: blue;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: lightskyblue;
+  display: inline-block;
+  font-size: 16px;
 }
 
 h2 {
@@ -35,10 +54,33 @@ h2 {
   font-size: 80px;
 }
 
+.podcast-p p {
+  background-color: fuchsia;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 40px;
+}
+
+.freakshow {
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.world-changers {
+  padding: 70px;
+}
+
+.painting {
+  background-color: fuchsia;
+  border-radius: 20px;
+  padding: 40px;
+  margin: 50px;
+}
+
 h3 {
   font-family: fantasy;
   font-size: 70px;
-  color: red;
+  color: lightblue;
 }
 
 p {
@@ -49,5 +91,5 @@ p {
 }
 img {
   width: 450px;
-  margin: 700px;
+  margin: 20px;
 }
