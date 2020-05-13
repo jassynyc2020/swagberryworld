@@ -9,12 +9,22 @@ h1 {
   text-shadow: pink;
   font-size: 100px;
   color: white;
+  margin: 700px;
 }
 
 .bio {
-    font-size: 40px;
-    color: white;
-    
+  font-size: 40px;
+  color: white;
+  background-color: pink;
+  border-radius: 20px;
+  margin: 70px;
+}
+
+div {
+  width: 300px;
+  border: 15px solid white;
+  padding: 50px;
+  margin: 20px;
 }
 
 h2 {
@@ -26,9 +36,9 @@ h2 {
 }
 
 h3 {
-    font-family: fantasy;
-    font-size: 70px;
-    color:red;
+  font-family: fantasy;
+  font-size: 70px;
+  color: red;
 }
 
 p {
@@ -37,8 +47,7 @@ p {
   font-weight: bold;
   font-family: fantasy;
 }
- img {
-     width: 450px;
- }
-
- 
+img {
+  width: 450px;
+  margin: 700px;
+}
