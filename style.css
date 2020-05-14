@@ -5,9 +5,26 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+@font-face {
+  src: url(./Fonts/Roboto-Regular.ttf);
+  font-family: "rob-tff";
+}
 
 body {
   background-color: midnightblue;
+}
+
+.talent-list,
+li {
+  color: fuchsia;
+  background-color: deepskyblue;
+  border-radius: 30px;
+  font-weight: 600;
+  display: block;
+  padding: 40px;
+  margin: 40px;
+  width: 450px;
+  font-size: 80px;
 }
 
 .theatre {
@@ -34,12 +51,23 @@ h1 {
   margin: 50px;
 }
 
+.logo {
+  background-color: fuchsia;
+  width: 150px;
+  height: 75px;
+  margin: 40px;
+  border: 5px solid white;
+  display: block;
+}
+
 li {
   margin: 30px;
   color: white;
 }
 
 button {
+  margin: 20px;
+  padding: 10px;
 }
 
 h2 {
@@ -47,6 +75,10 @@ h2 {
   color: lightblue;
   font-weight: bold;
   font-size: 80px;
+}
+
+.rebel-video {
+  border: white solid 5px;
 }
 
 .podcast-p p {
@@ -86,4 +118,8 @@ p {
 img {
   width: 450px;
   margin: 20px;
+}
+footer {
+  color: fuchsia;
+  background-color: ghostwhite;
 }
