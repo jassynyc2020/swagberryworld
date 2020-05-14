@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 20px;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -14,19 +14,16 @@ body {
   background-color: midnightblue;
 }
 
-.talent-list,
+ul.talent-list,
 li {
-  color: fuchsia;
   background-color: deepskyblue;
   border-radius: 30px;
   font-weight: 600;
-  display: block;
-  padding: 40px;
-  margin: 40px;
-  width: 450px;
+  padding: 20px;
+  margin: 100px;
+  width: 600px;
   font-size: 80px;
 }
-
 .theatre {
   border-radius: 20px;
   text-decoration-color: pink;
@@ -61,8 +58,8 @@ h1 {
 }
 
 li {
-  margin: 30px;
-  color: white;
+  color:fuchsia ;
+  
 }
 
 button {
@@ -104,6 +101,14 @@ h2 {
   margin: 50px;
 }
 
+button.big-eyes {
+  background-color: fuchsia;
+  color: blue;
+  font-size: medium;
+  display: block;
+  margin-bottom: 20px;
+}
+
 h3 {
   font-size: 70px;
   color: lightblue;
@@ -118,6 +123,7 @@ p {
 img {
   width: 450px;
   margin: 20px;
+  display: 
 }
 footer {
   color: fuchsia;
