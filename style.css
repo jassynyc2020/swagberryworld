@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -37,13 +39,10 @@ li {
   color: white;
 }
 
-
 button {
-  
 }
 
 h2 {
-  font-family: fantasy;
   font-style: normal;
   color: lightblue;
   font-weight: bold;
@@ -74,7 +73,6 @@ h2 {
 }
 
 h3 {
-  font-family: fantasy;
   font-size: 70px;
   color: lightblue;
 }
