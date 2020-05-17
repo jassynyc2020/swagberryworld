@@ -13,6 +13,10 @@
   src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
 }
 
+@keyframes mymove {
+50% {text-indent: 200px}
+}
+
 img {
   width: 400px;
   border-style: ridge;
@@ -24,11 +28,23 @@ body {
 }
 
 h1.jassy-title {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 200px;
+  padding: 200px;
+  border-style: groove;
   border-radius: 50%;
+  border-width: 200px;
+  border-right-color: fuchsia;
+  border-bottom-color: fuchsia;
+  border-left-color: fuchsia;
+  border-top-color: fuchsia;
+  font-size: 100px;
   place-items: center;
   margin: 30px;
+  text-align: center;
+  font-family: "Lato";
+  background-color: white;
+  animation: mymove 5s infinite;
 }
 
 .bio-pic {
@@ -55,11 +71,14 @@ h1 {
   padding: 40px;
   margin: 50px;
   text-align: left;
+  text-indent: 50px;
 }
 
 h2,
 .bio-title {
   font-family: "Lato";
+  text-align: center;
+  animation: mymove 5s infinite;
 }
 
 .logo {
@@ -106,9 +125,19 @@ h2 {
 
 .rebel-video {
   border: white solid 5px;
+  border-style: ridge;
+  border-width: 20px;
 }
 
 .podcast-p p {
+  background-color: fuchsia;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 40px;
+  text-indent: 50px;
+}
+
+p.painting-pics {
   background-color: fuchsia;
   border-radius: 40px;
   margin: 10px;
@@ -129,15 +158,17 @@ p {
   font-size: 50px;
   font-weight: bold;
   font-family: fantasy;
+  border-style: dotted;
 }
 
-footer {
-  color: fuchsia;
+.footer {
+  border-style: dotted;
+  border-radius: 50px;
+  font-size: 20px;
+  font-style: "Lato";
   background-color: ghostwhite;
-  margin: 20px;
-  padding: 20px;
-  border: dotted;
-  text-align: center;
-  display: block;
-  width: 90px;
+  color: fuchsia;
+  width: auto;
+  padding: 10px;
+  margin-right: 20px;
 }
