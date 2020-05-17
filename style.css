@@ -14,7 +14,9 @@
 }
 
 @keyframes mymove {
-50% {text-indent: 200px}
+  50% {
+    text-indent: 200px;
+  }
 }
 
 img {
@@ -43,7 +45,6 @@ h1.jassy-title {
   margin: 30px;
   text-align: center;
   font-family: "Lato";
-  background-color: white;
   animation: mymove 5s infinite;
 }
 
@@ -56,11 +57,8 @@ h1.jassy-title {
 
 h1 {
   font-family: "Lato";
-  font-style: normal;
-  text-decoration-color: white;
-  text-shadow: pink;
   font-size: 100px;
-  color: fuchsia;
+  color: fuchsia
 }
 
 .bio {
@@ -136,6 +134,10 @@ h2 {
   padding: 40px;
   text-indent: 50px;
 }
+.to-listen {
+  animation: mymove 1s infinite;
+}
+
 
 p.painting-pics {
   background-color: fuchsia;
@@ -159,6 +161,7 @@ p {
   font-weight: bold;
   font-family: fantasy;
   border-style: dotted;
+  text-align: center;
 }
 
 .footer {
