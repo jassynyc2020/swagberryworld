@@ -1,5 +1,4 @@
 * {
-  padding: 0;
   margin: 20px;
 }
 
@@ -13,6 +12,13 @@
   font-family: "Oswald", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
 }
+
+img {
+  width: 400px;
+  border-style: ridge;
+  border-width: 20px;
+}
+
 body {
   background-color: blue;
 }
@@ -25,13 +31,20 @@ h1.jassy-title {
   margin: 30px;
 }
 
+.bio-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 h1 {
   font-family: "Lato";
   font-style: normal;
   text-decoration-color: white;
   text-shadow: pink;
   font-size: 100px;
-  color: white;
+  color: fuchsia;
 }
 
 .bio {
@@ -83,13 +96,12 @@ button {
   border-style: dotted;
 }
 
-
-
 h2 {
   font-style: "Lato";
   color: lightblue;
   font-weight: bold;
   font-size: 80px;
+  margin: auto;
 }
 
 .rebel-video {
@@ -118,11 +130,14 @@ p {
   font-weight: bold;
   font-family: fantasy;
 }
-img {
-  width: 450px;
-  margin: 20px;
-}
+
 footer {
   color: fuchsia;
   background-color: ghostwhite;
+  margin: 20px;
+  padding: 20px;
+  border: dotted;
+  text-align: center;
+  display: block;
+  width: 90px;
 }
