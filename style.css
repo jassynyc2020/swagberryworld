@@ -58,7 +58,7 @@ h1.jassy-title {
 h1 {
   font-family: "Lato";
   font-size: 100px;
-  color: fuchsia
+  color: fuchsia;
 }
 
 .bio {
@@ -133,11 +133,11 @@ h2 {
   margin: 10px;
   padding: 40px;
   text-indent: 50px;
+  text-align: left;
 }
 .to-listen {
   animation: mymove 1s infinite;
 }
-
 
 p.painting-pics {
   background-color: fuchsia;
@@ -146,8 +146,8 @@ p.painting-pics {
   padding: 40px;
 }
 
-#drawing {
-  font-family: "Lato";
+#drawing {  
+  font-family: "Lato";   /*  need to center */
 }
 
 h3 {
