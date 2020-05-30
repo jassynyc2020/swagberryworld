@@ -1,5 +1,6 @@
 * {
-  margin: 20px;
+  margin: o;
+  padding: 0;
 }
 
 @font-face {
@@ -14,66 +15,81 @@
 }
 
 @keyframes mymove {
-  50% {
-    text-indent: 200px;
+  30% {
+    text-indent: 300px;
   }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100vh;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
   width: 400px;
   border-style: ridge;
   border-width: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
   background-color: blue;
 }
 
-h1.jassy-title {
-  width: 500px;
-  height: 200px;
-  padding: 200px;
-  border-style: groove;
-  border-radius: 50%;
-  border-width: 200px;
-  border-right-color: fuchsia;
-  border-bottom-color: fuchsia;
-  border-left-color: fuchsia;
-  border-top-color: fuchsia;
+.jassy-title {
+  width: 100%;
+  font-family: cursive;
   font-size: 100px;
-  place-items: center;
-  margin: 30px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  font-family: "Lato";
-  animation: mymove 5s infinite;
+  justify-content: center;
+  border: 20px solid white;
+  border-radius: 50px;
+  border-style: ridge;
+  padding-bottom: 20px;
 }
 
 .bio-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  display: flex;
+  padding: 30px;
 }
 
 h1 {
   font-family: "Lato";
   font-size: 100px;
   color: fuchsia;
+  width: 100%;
 }
 
-.bio {
+p.bio {
+  display: flex;
+  flex-direction: column;
   font-size: 40px;
   color: white;
   background-color: fuchsia;
   border-radius: 20px;
-  padding: 40px;
-  margin: 50px;
   text-align: left;
   text-indent: 50px;
+  width: 100%;
+  margin-right: 50px;
+  
+ 
 }
 
-h2,
-.bio-title {
+h2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
   font-family: "Lato";
   text-align: center;
   animation: mymove 5s infinite;
@@ -90,6 +106,12 @@ h2,
 
 li {
   color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
 
 button {
@@ -115,7 +137,7 @@ button {
 
 h2 {
   font-style: "Lato";
-  color: lightblue;
+  color: darkturquoise;
   font-weight: bold;
   font-size: 80px;
   margin: auto;
@@ -125,9 +147,21 @@ h2 {
   border: white solid 5px;
   border-style: ridge;
   border-width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: contain ;
+  
 }
 
-.podcast-p p {
+.theatre-images {
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-flow: column;
+}
+
+.podcast-p p{
   background-color: fuchsia;
   border-radius: 40px;
   margin: 10px;
@@ -136,18 +170,20 @@ h2 {
   text-align: left;
 }
 .to-listen {
-  animation: mymove 1s infinite;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-p.painting-pics {
+.painting-pics {
   background-color: fuchsia;
   border-radius: 40px;
   margin: 10px;
   padding: 40px;
 }
 
-#drawing {  
-  font-family: "Lato";   /*  need to center */
+#drawing {
+  font-family: "Lato"; /*  need to center */
 }
 
 h3 {
@@ -162,6 +198,7 @@ p {
   font-family: fantasy;
   border-style: dotted;
   text-align: center;
+
 }
 
 .footer {
@@ -171,7 +208,22 @@ p {
   font-style: "Lato";
   background-color: ghostwhite;
   color: fuchsia;
-  width: auto;
+  width: 100%;
   padding: 10px;
-  margin-right: 20px;
+}
+
+/*Tablet---------------------->*/
+@media (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+/*Desktop---------------------->*/
+@media (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-flow: column;
+  }
 }
