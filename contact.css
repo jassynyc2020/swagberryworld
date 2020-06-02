@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Lato", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+    font-family: "Montserrat", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+    font-family: "Open Sans", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+    font-family: "Oswald", sans-serif;
+    src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+  }
+
+  body {
+      font-family: "Lato";
+  }
+
+.container
+{
+background-color: blue;
+-webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  display: -webkit-inline-flex;
+  margin-top: 200px;
+  margin-left: 230px;
+  margin-right: 195px;
+  margin-bottom: 200px;
+
+}
+
+select {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+label {
+    background-color: white;
+    color: fuchsia;
+}
+
+input {
+    color: fuchsia;
+}
+
+.contact {
+    width: 300px;
+    margin: 0 auto;
+    border: .5px solid grey;
+    background-color: lightskyblue;
+    display: inline-block;
+}
+button {
+    background-color: fuchsia;
+    border: 1px dotted white;
+    border-radius: 25px;
+
+}
+
+h1 {
+    color: blue;
+}
+
+h3 {
+    color: blue;
+}
