@@ -1,19 +1,3 @@
-* {
-  margin: o;
-  padding: 0;
-}
-
-@font-face {
-  font-family: "Lato", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
-  font-family: "Montserrat", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
-  font-family: "Open Sans", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
-  font-family: "Oswald", sans-serif;
-  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
-}
-
 @keyframes mymove {
   30% {
     text-indent: 300px;
@@ -41,10 +25,6 @@ img {
   flex-direction: column;
 }
 
-body {
-  background-color: blue;
-}
-
 .jassy-title {
   width: 100%;
   font-family: cursive;
@@ -68,6 +48,7 @@ h1 {
   font-family: "Lato";
   font-size: 100px;
   color: fuchsia;
+  text-shadow: paleturquoise;
   width: 100%;
 }
 
@@ -102,14 +83,26 @@ h2 {
   display: block;
 }
 
-li {
-  color: white;
+.navbar {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 ul {
   display: flex;
   flex-direction: column;
   padding: 30px;
+}
+
+.navbar li {
+  list-style-type: none;
+  width: 100%;
+}
+
+.navbar li:hover {
+  background-color: skyblue;
 }
 
 button {
@@ -135,12 +128,11 @@ button {
 
 h2 {
   font-style: "Lato";
-  color: darkturquoise;
+  color: blue;
   font-weight: bold;
   font-size: 80px;
   margin: auto;
 }
-
 
 .rebel-video {
   border: white solid 5px;
@@ -212,7 +204,7 @@ p {
 @media (min-width: 500px) {
   .container {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
   }
 }
 
@@ -220,6 +212,7 @@ p {
 @media (min-width: 900px) {
   .container {
     display: flex;
-    flex-flow: column;
+    flex-direction: row;
+    
   }
 }
