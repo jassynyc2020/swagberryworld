@@ -1,3 +1,5 @@
+/* base styles */
+
 @font-face {
   font-family: "Lato", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
@@ -9,25 +11,29 @@
   src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ 
+}
+
 body {
   font-family: "Lato";
   background-color: skyblue;
+
 }
 
 .container {
-  background-color: blue;
   -webkit-box-shadow: 10px 18px 20px 10px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 10px 18px 20px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 19px 18px 20px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   display: -webkit-inline-flex;
   flex-direction: column;
-  margin-top: 200px;
-  margin-left: 230px;
-  margin-right: 195px;
-  margin-bottom: 200px;
- 
 
+  
+ 
 }
 
 select {
@@ -41,16 +47,16 @@ select {
   background-color: lightskyblue;
   display: inline-block;
   justify-content: center;
-  padding: 1rem;
+  padding: 1em;
 }
 button {
   background-color: fuchsia;
   border: 1px dotted white;
   border-radius: 25px;
-  padding: 0.3rem;
-  margin: 2.5rem;
-  width: 8rem;
-  margin: inherit;
+  padding: 1em;
+  margin: 2.5em;
+  width: 8em;
+ 
 
 }
 
@@ -70,6 +76,6 @@ h3 {
 }
 
 input,.label {
-  padding: 1rem;
+  padding: 1em;
   width: 90%;
 }

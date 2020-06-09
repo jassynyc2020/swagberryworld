@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin: o;
+  margin: 0;
   padding: 0;
 }
 
@@ -34,3 +34,24 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#00dbff",GradientType=1);
 }
+h1, h2 {
+  text-transform: capitalize;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  transition: opacity .15s ease-in-out;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+
+

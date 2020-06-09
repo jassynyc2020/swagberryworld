@@ -1,0 +1,41 @@
+/* base styels */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "lato";
+  color: white;
+}
+
+footer {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 30px;
+  margin-top: 1em;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+/* layout styles */
+
+.heading-title {
+  display: flex;
+  flex-direction: column;
+  text-shadow: 2px 2px lightblue;
+  align-items: center;
+}
+
+/* blocks */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  padding: 0 30px;
+  max-width: 1200px;
+  margin-bottom: 1em;
+}

@@ -4,74 +4,33 @@
   }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100vh;
-}
-
-.header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-img {
-  width: 400px;
-  border-style: ridge;
-  border-width: 20px;
-  display: flex;
-  flex-direction: column;
-}
-
 .jassy-title {
   width: 100%;
   font-family: cursive;
   font-size: 100px;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  border: 20px solid white;
-  border-radius: 50px;
-  border-style: ridge;
-  padding-bottom: 20px;
+  align-content: center;
+  
+
 }
 
 .bio-pic {
   display: flex;
   padding: 30px;
 }
-
-h1 {
-  font-family: "Lato";
-  font-size: 100px;
-  color: fuchsia;
-  text-shadow: paleturquoise;
-  width: 100%;
-}
-
-p.bio {
+.container {
   display: flex;
   flex-direction: column;
-  font-size: 40px;
-  color: white;
-  background-color: fuchsia;
-  border-radius: 20px;
-  text-align: left;
-  text-indent: 50px;
-  width: 100%;
-  margin-right: 50px;
+  max-width: 1200px;
 }
 
-h2 {
+.header {
   display: flex;
   flex-direction: column;
-  margin-right: 10px;
-  font-family: "Lato";
-  text-align: center;
-  animation: mymove 5s infinite;
+  width: 0px;
+  text-indent: -4px;
+  align-items: flex-start;
 }
 
 .logo {
@@ -84,39 +43,51 @@ h2 {
 }
 
 .navbar {
-  background-color: white;
+  background: rgb(224, 157, 227);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(154, 0, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(154, 0, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(154, 0, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#9a00ff",GradientType=1);
   width: 100%;
   display: flex;
-  flex-direction: row;
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
 }
 
 .navbar li {
   list-style-type: none;
-  width: 100%;
 }
 
 .navbar li:hover {
   background-color: skyblue;
 }
 
-button {
-  margin: 20px;
+.footer {
+  border-style: dotted;
+  border-radius: 50px;
+  font-size: 20px;
+  font-style: "Lato";
+  background-color: ghostwhite;
+  color: fuchsia;
+  width: 100%;
   padding: 10px;
-  cursor: pointer;
-  border-color: fuchsia;
-  border-style: solid;
 }
 
 .btn {
   border: 2px solid black;
   background-color: fuchsia;
   border-color: white;
+  box-shadow: 1px 1px 10px 10px rgba(224, 157, 227, 1);
   color: white;
   padding: 14px 28px;
   font-size: 16px;
@@ -124,14 +95,37 @@ button {
   font-size: x-large;
   border-radius: 30px;
   border-style: dotted;
+  margin: 0 auto;
 }
 
-h2 {
-  font-style: "Lato";
-  color: blue;
-  font-weight: bold;
-  font-size: 80px;
-  margin: auto;
+.talent-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.podcast-p p {
+  background-color: fuchsia;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 40px;
+  text-indent: 50px;
+  text-align: left;
+}
+
+.to-listen {
+  display: flex;
+  flex-direction: column;
+}
+
+.painting-pics {
+  background-color: fuchsia;
+  border-radius: 40px;
+  margin: 10px;
+  padding: 40px;
+}
+
+#drawing {
+  font-family: "Lato"; /*  need to center */
 }
 
 .rebel-video {
@@ -151,28 +145,67 @@ h2 {
   flex-flow: column;
 }
 
-.podcast-p p {
-  background-color: fuchsia;
-  border-radius: 40px;
-  margin: 10px;
-  padding: 40px;
-  text-indent: 50px;
-  text-align: left;
-}
-.to-listen {
+img {
+  width: 400px;
+  border-style: ridge;
+  border-width: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.painting-pics {
-  background-color: fuchsia;
-  border-radius: 40px;
-  margin: 10px;
-  padding: 40px;
+h1 {
+  font-family: "Lato";
+  font-size: 100px;
+  color: white;
+  box-shadow: 3px 7px white;
+  width: 100%;
 }
 
-#drawing {
-  font-family: "Lato"; /*  need to center */
+p.bio {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  color: white;
+  background-color: fuchsia;
+  border-radius: 20px;
+  text-align: left;
+  text-indent: 50px;
+  width: 100%;
+  margin-right: 50px;
+}
+
+ul {
+  display: flex;
+  padding: 30px;
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2rem;
+  display: -webkit-inline-flex;
+  flex-direction: column;
+  padding: 0.15em;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-color: fuchsia;
+  border-style: solid;
+}
+
+h2 {
+  color: blue;
+  font-weight: 900;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  font-family: "Lato";
+  text-align: center;
+  animation: mymove 5s infinite;
 }
 
 h3 {
@@ -189,17 +222,6 @@ p {
   text-align: center;
 }
 
-.footer {
-  border-style: dotted;
-  border-radius: 50px;
-  font-size: 20px;
-  font-style: "Lato";
-  background-color: ghostwhite;
-  color: fuchsia;
-  width: 100%;
-  padding: 10px;
-}
-
 /*Tablet---------------------->*/
 @media (min-width: 500px) {
   .container {
@@ -212,7 +234,16 @@ p {
 @media (min-width: 900px) {
   .container {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: column;
+    max-width: 1000px;
+  }
+
+  .bio {
+    margin: 2em;
+    width: auto;
+  }
+
+  .talent-list {
+    margin: 10em;
   }
 }
