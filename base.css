@@ -34,24 +34,34 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#00dbff",GradientType=1);
 }
-h1, h2 {
-  text-transform: capitalize;
+
+h2 {
+  color: blue;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 900;
+  font-size: 5rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1rem;
+  font-family: "Lato";
+  text-align: center;
+  animation: mymove 5s infinite;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  position: fixed;
+  
 }
 
 a {
   text-decoration: none;
-  transition: opacity .15s ease-in-out;
+  transition: opacity 0.15s ease-in-out;
   color: inherit;
 }
 
 img {
   width: 100%;
 }
-
-
-
