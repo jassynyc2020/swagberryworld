@@ -10,29 +10,12 @@
   }
 }
 
-p {
-  color: white;
-  font-size: 3rem;
-  font-weight: bold;
-  font-family: fantasy;
-  border-style: dotted;
-  text-align: center;
-}
-
-h1 {
-  font-family: "Lato";
-  font-size: 10rem;
-  color: white;
-  margin-left: 1em;
-}
-
 /* layout styles */
 .navbar {
   background: #e09de3;
   background: -webkit-gradient(linear, left top, right top, color-stop(36%, #e09de3), to(#9a00ff));
   background: linear-gradient(90deg, #e09de3 36%, #9a00ff 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#9a00ff",GradientType=1);
-  width: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,9 +25,6 @@ h1 {
           flex-direction: row;
   -webkit-box-shadow: 0.9rem 0.9rem 0.9rem;
           box-shadow: 0.9rem 0.9rem 0.9rem;
-  padding: 3rem;
-  margin-top: 0;
-  /* justify-content: space-evenly */
 }
 
 .navbar li {
@@ -52,13 +32,14 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-family: "lato";
   color: blue;
   font-weight: 800px;
+  width: 100%;
 }
 
 .navbar li:hover {
@@ -74,6 +55,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .jassy-title {
@@ -89,7 +71,7 @@ h1 {
           flex-direction: column;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 18rem;
+  margin: 20px 0px 0px 100px;
 }
 
 .bio-pic {
@@ -99,21 +81,8 @@ h1 {
   padding: 30px;
   margin-left: 2.7rem;
   margin-top: 5rem;
-}
-
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 0px;
-  text-indent: -4px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-shadow: 0.9rem 0.9rem 0.9rem;
+          box-shadow: 0.9rem 0.9rem 0.9rem;
 }
 
 .logo {
@@ -182,14 +151,11 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 1.4em;
   font-size: 4rem;
   color: white;
   background-color: fuchsia;
   border-radius: 20px;
-  text-indent: 50px;
   width: 100%;
-  margin-bottom: 1rem;
 }
 
 .bio {
@@ -200,9 +166,9 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: cente;
-      -ms-flex-pack: cente;
-          justify-content: cente;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: 2.2em;
   font-size: 3rem;
   color: white;
@@ -347,9 +313,6 @@ h1 {
 }
 
 img {
-  width: 400px;
-  border-style: ridge;
-  border-width: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,7 +343,6 @@ a {
 button {
   margin: 20px;
   padding: 10px;
-  cursor: pointer;
   border-color: fuchsia;
   border-style: solid;
 }
@@ -399,7 +361,7 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 500px;
+  width: 100%;
 }
 
 /*Tablet---------------------->*/
@@ -454,8 +416,8 @@ h3 {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   .pic-title .jassy-title .bio-pic {

@@ -49,19 +49,5 @@ h2 {
   animation: mymove 5s infinite;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  
-}
 
-a {
-  text-decoration: none;
-  transition: opacity 0.15s ease-in-out;
-  color: inherit;
-}
 
-img {
-  width: 100%;
-}
