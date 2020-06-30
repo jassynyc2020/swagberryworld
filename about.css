@@ -25,14 +25,9 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#9a00ff",GradientType=1);
 }
-
-footer {
+header {
   display: flex;
-  margin: 0 auto;
-  padding: 0 30px;
-  margin-top: 1em;
 }
-
 p {
   display: flex;
   flex-direction: column;
@@ -41,20 +36,24 @@ p {
   font-size: 2rem;
   font-weight: 800;
 }
-
 /* layout styles */
-
-.heading-title {
-  display: flex;
-  flex-direction: column;
-  text-shadow: 2px 2px lightblue;
+.navbar > li {
+  list-style: none;
+}
+.nav-contact, .home {
+  color: hotpink;
+  padding: 1em;
+}
+.navbar li:hover {
+  background-color: blue;
+}
+.heading-title  {
+  text-shadow: 2px 2px;
   align-items: center;
   color: blue;
-  font-size: 4rem;
+  font-size: 8rem;
 }
-
 /* blocks */
-
 .header {
   display: flex;
   flex-direction: column;
@@ -62,4 +61,13 @@ p {
   padding: 0 30px;
   max-width: 1200px;
   margin-bottom: 1em;
+}
+.navbar {
+  background: lightblue;
+  position: fixed;
+  font-family: "Lato";
+  font-weight: 700;
+}
+.about-container {
+  margin-top: 100px;
 }

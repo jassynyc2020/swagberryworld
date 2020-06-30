@@ -6,40 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="./About/about.css">
+    <link rel="stylesheet" href="./Contact/contact.css">
     <link rel="stylesheet" href="style.css" type="text/css" /> 
   </head>
   <body>
-   <div class="container">
      <header>
        <nav>
-         <ul  class="navbar">
-           <li><a href="./About/about.html">About</a>
+         <ul class="navbar container">
+           <li>
+             <a class="nav-about" href="./about.html">About</a>
           </li>
-           <li><a href="./Contact/contact.html">Contact</a>
+           <li>
+             <a class="nav-contact" href="./contact.html">Contact</a>
            </li>
-           <li><a href="./index.html">Home</a>
+           <li>
+             <a class="home" href="./index.html">Home</a>
            </li>
-          </ul>
-        </nav>
-      </header>
-        <div class="pic-title">
-          <h1 class="jassy-title">JassyBlu</h1><br>
+        </ul>
+      </nav>
+    </header>
+        <div class="hero-container container">
+          <h1 class="hero-title">JassyBlu</h1><br>
           <div class="bio-pic">
            <img src="images/JassyBluPinkHair.jpeg" alt="JassyBlu-Pic">
-          </div>  
-        </div> 
-    <main>
+        </div>  
       <section>
-     <div class="bio-section">
-      <h2>Bio</h2>
-      
-        <p class="bio">I am a creative artist with a flair for designing using imagery from the
+     <div class="bio-section container">
+      <h2 class="bio-title">Bio</h2>
+        <p class="bio-description">I am a creative artist with a flair for designing using imagery from the
         deepest depths of my imagination to bring inspiration and wonder to
         those who are fortunate to view my work.</p>
      </div>
-      </section>
-      <h2>My Skills</h2>
+      <div class="my-skills-section container">
+       <h2 class="my-skills">My Skills</h2>
        <nav>
         <ul class="talent-list">
          <li>
@@ -60,69 +60,54 @@
            <a href="#fliers"><button class="btn fliers">Fliers</button></a></li>
        </ul>   
       </nav>
-<!--center the text in the list boxes-->
 <section>
       <h2 id="theatre">Theatre</h2>
       <div class="theater-images">
-        <img src="./images/Play-Buthered Rebel-Self-Pic.jpeg"
-        alt="butchered-rebel-self" />
-                                                                                
-      <img src="./images/PlayEkjuteFlier.jpeg" alt="ekjute-flier" />
+        <img src="./images/Play-Buthered Rebel-Self-Pic.jpeg"alt="butchered-rebel-self" />                                                                            
+        <img src="./images/PlayEkjuteFlier.jpeg" alt="ekjute-flier" />
         <iframe class="rebel-video"
          width="300" height="200"
          src="https://www.youtube.com/embed/JLhFUtK9Cv4">
        </iframe>
+        </div> 
+    <h2 id="painting">Painting</h2>
+      <p class="residency-description">Artist of Residency - Gamlí Skoli in Hrísey, Iceland</p>
+    <div class="paintings">
+      <img class="big-painting" src="./images/Iceland-Big-painting.jpeg" alt="Eyes-in-the-Sky">
+      <img src="./images/iceland-art-exhibit-me.jpeg" alt="Exhibit-me"> 
+      <img src="./images/iceland-blood-eye.jpeg" alt="blood-eye">
+      <img src="./images/Iceland-horse.jpeg" alt="iceland-horse">
+      <img src="./images/IcelandFire.jpeg" alt="fire">
+      <img src="./images/IcelandMan.jpeg" alt="man">
+      <img src="./images/IcelandSkyEyes.jpeg" alt="sky-eye">
+      <img src="./images/art-moghul2pieces.jpeg" alt="moghul-art">
     </div>
- </section>
- <section>  
-<h2 id="painting">Painting</h2>
-
-<p class="residency-description" style="font-weight: bold;">Artist of Residency - Gamlí Skoli in Hrísey, Iceland</p>
-<div class="paintings">
-  <img class="big-painting" src="./images/Iceland-Big-painting.jpeg" alt="Eyes-in-the-Sky">
-  <img src="./images/iceland-art-exhibit-me.jpeg" alt="Exhibit-me"> 
-  <img src="./images/iceland-blood-eye.jpeg" alt="blood-eye">
-  <img src="./images/Iceland-horse.jpeg" alt="iceland-horse">
-  <img src="./images/IcelandFire.jpeg" alt="fire">
-  <img src="./images/IcelandMan.jpeg" alt="man">
-  <img src="./images/IcelandSkyEyes.jpeg" alt="sky-eye">
-  <img src="./images/art-moghul2pieces.jpeg" alt="moghul-art">
-</div>
-</section>
-<section>
 <h2>Snow Sculptures</h2>
 <div id="sculptures">
   <img src="./images/sculpture-baldur-snoji.jpeg" alt="baldur-snoji-sculpture">
   <img src="./images/sculpture-nordicgoddess.jpeg" alt="nordic-goddess-sculpture">
 </div>
-</section>
 <h2>Abstract Drawings</h2>
 <div id="drawings">
   <img src="./images/drawing-ali.jpeg" alt="ali">
   <img src="./images/drawing-macygirl.jpeg" alt="macy-girl">
 </div>
-  <section>
 <h2>Podcast</h2>
 <div id="podcast">
-<p>Welcome to my podcast. A warm and welcoming place to speak your Truth.
+<p class="podcast-description">Welcome to my podcast. A warm and welcoming place to speak your Truth.
   A place for All the Beautiful Freaks in the World.
   To kick-off the new season of the JassyBlu Show, I added a new segment which I call "The World Changers".  
   Where I will bring guests who are passionate about bringing change and positive impact to the causes that are close to their hearts.
   </p>
 </div>
-  </section>
-  <section>
 <div id="freakshow">
   <img src="./images/podcast-freakshow.jpeg" alt="freakshow">
 </div>
 <div class="to-listen">
-<p>To Listen - Click me below</p>
+    <p>To Listen - Click me below</p>
+    <a href="https://open.spotify.com/show/2KnCW3YUpffcdKKS4Xaadd" target="_blank" id="world-changers">
+    <img src="./images/podcast-jassyblu-show.png" alt="jassyblu-show"></a>
 </div>
-<a href="https://open.spotify.com/show/2KnCW3YUpffcdKKS4Xaadd" target="_blank" id="world-changers">
-  <img src="./images/podcast-jassyblu-show.png" alt="jassyblu-show"></a>
-</section>
-
-  <section>
 <h2>Dance</h2>
 <div id="dance">
   <p class="to-listen">To Watch- Click me below</p>
@@ -153,11 +138,10 @@
 
 <section>
 <h2>Swagberry World Productions</h2>
-   <div class="Logo>">
+   <div class="Logo container>">
      <img src="./images/logo-swagberry.jpeg" alt="swagberry-world-logo">
    </div>
-</section>
-    </main>
+  </section>
 </div>    
     <footer>
       <br>
@@ -165,7 +149,6 @@
       <br>
 <a class="footer">This website created by Nisha "JassyBlu" Haider</a>
     </footer>
-
   </body>
 </html>
 

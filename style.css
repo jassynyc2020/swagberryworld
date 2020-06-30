@@ -1,103 +1,112 @@
 /* base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(224, 157, 227);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(0, 219, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(0, 219, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(0, 219, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#00dbff",GradientType=1);
+}
+/* Global styles */
 @keyframes mymove {
   50% {
     text-indent: 170px;
   }
 }
-
+@font-face {
+  font-family: "Lato", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+  font-family: "Open Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+  font-family: "Oswald", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
+}
+header {
+  display: flex;
+}
+h2 {
+  color: blue;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-weight: 900;
+  font-size: 5rem;
+  display: flex;
+  margin-left: 16px;
+  font-family: "Lato";
+  text-align: center;
+  animation: mymove 5s infinite;
+}
+.container {
+  margin: 5rem; 
+}
 p {
+  line-height: 1.5;
+  background-color: fuchsia;
   color: white;
-  font-size: 3rem;
+  font-size: 2em;
   font-weight: bold;
   font-family: fantasy;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
-
 h1 {
   font-family: "Lato";
-  font-size: 10rem;
+  font-size: 5rem;
   color: white;
-  margin-left: 1em;
 }
-
-ul {
-  list-style-type: none;
-}
-
-/* layout styles */
-
-.navbar {
-  background: rgb(224, 157, 227);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(224, 157, 227, 1) 36%,
-    rgba(154, 0, 255, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(224, 157, 227, 1) 36%,
-    rgba(154, 0, 255, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(224, 157, 227, 1) 36%,
-    rgba(154, 0, 255, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#9a00ff",GradientType=1);
-  width: 100vh;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 0.9rem 0.9rem 0.9rem;
-  padding: 3rem;
-  margin-top: 0;
-  /* justify-content: space-evenly */
-}
-
-.navbar li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  font-family: "lato";
-  color: blue;
-  font-weight: 800px;
+img {
   width: 100%;
 }
+/* base styles */
+.navbar {
+  background: lightblue;
+  position: fixed;
+  padding: 1rem;
+  justify-content: space-between;
+  font-family: "Lato";
+  font-weight: 700;
+}
+.my-skills-section {
+  display: grid;
 
+}
+/* layout styles */
+.navbar > li {
+  list-style: none;
+}
 .navbar li:hover {
   background-color: skyblue;
-  width: 20vh;
 }
-.pic-title {
-  display: flex;
-  flex-direction: column;
-}
-.jassy-title {
+.hero-title {
   width: 100%;
   font-family: cursive;
   font-size: 100px;
-  display: flex;
-  flex-direction: column;
   align-content: center;
   margin-top: 18rem;
 }
-
-.bio-pic {
-  display: flex;
-  padding: 30px;
-  margin-left: 2.7rem;
-  margin-top: 5rem;
-}
-
 .logo {
   background-color: fuchsia;
   width: 150px;
-  height: 75px;
-  margin: 40px;
   border: 5px solid white;
-  display: block;
 }
-
 .btn {
   background-color: fuchsia;
   color: white;
@@ -107,96 +116,36 @@ ul {
   font-size: x-large;
   border-radius: 30px;
   margin: 0 auto;
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-.talent-list {
-  display: flex;
-  flex-direction: row;
-}
-
-.paintings {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-left: 3.5rem;
-}
-
-.theater-images {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-left: 4.7rem;
-}
-
-.podcast {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1.4em;
-  font-size: 4rem;
-  color: white;
-  background-color: fuchsia;
-  border-radius: 20px;
-  text-indent: 50px;
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.bio {
-  display: flex;
-  flex-direction: column;
-  justify-content: cente;
-  margin-left: 2.2em;
-  font-size: 3rem;
-  color: white;
-  background-color: fuchsia;
-  border-radius: 20px;
+.podcast-description {
+  margin: 0 auto;
+  padding-bottom: 10px;
   text-align: center;
-  text-indent: 50px;
-  width: 100%;
-  margin-right: 15rem;
+  font-size: 30px;
+  width: 100%; 
 }
-
-.residency-description {
+.residency-description,.bio-description {
   background-color: fuchsia;
   border-radius: 40px;
-  margin: 10px;
+  margin: 50px;
   padding: 1em;
-  font-size: 3rem;
-  width: 100%;
-  margin-left: 6rem;
+  font-size: 20px;
+  width: 100%;  
 }
-
 .rebel-video {
-  box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: flex;
-  flex-direction: column;
-  width: 123%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 500px;
+  height: 500px;
 }
-
-.sculptures {
+.sculptures, .drawings {
   width: 100%;
-  display: flex;
   flex-flow: column;
-  margin-left: 3rem;
 }
-
 .drawings {
-  width: 100%;
-  display: flex;
-  flex-flow: column;
   margin-left: 3rem;
   margin-top: 4em;
 }
-
-#freakshow {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 2rem;
-  margin-top: 2em;
-}
-
 .to-listen {
   display: flex;
   flex-direction: column;
@@ -205,28 +154,12 @@ ul {
   animation-name: myname;
   animation-duration: 4s;
 }
-
 .fliers {
   width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: 3rem;
   margin-top: 4em;
-}
-
-@keyframes myname {
-  0% {
-    background-color: white;
-  }
-  25% {
-    background-color: lightpink;
-  }
-  75% {
-    background-color: pink;
-  }
-  100% {
-    background-color: fuchsia;
-  }
 }
 .footer {
   border-style: dotted;
@@ -238,20 +171,14 @@ ul {
   width: 100%;
   padding: 10px;
 }
-
-.bio-pic> img {
-  width: 400px;
+.bio-pic > img {
+  width: 250px;
+  border-radius: 20%;
   display: flex;
   flex-direction: column;
-  box-shadow:  10px 8px 10px 8px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 10px 8px 10px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-ul {
-  display: flex;
-  padding: 30px;
-  margin: 1em;
-}
-
 a {
   text-decoration: none;
   font-size: 2rem;
@@ -259,61 +186,36 @@ a {
   flex-direction: column;
   padding: 0.15em;
 }
-
-button {
-  margin: 20px;
-  padding: 10px;
-  cursor: pointer;
-  border-color: fuchsia;
-  border-style: solid;
-}
-
-h3 {
-  font-size: 70px;
-  color: lightblue;
-}
-
-/* block styles */
-.container {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-}
-
 /*Tablet---------------------->*/
 @media (min-width: 500px) {
-  .container {
+  body {
     display: flex;
     flex-direction: column;
   }
   ul .navbar {
     display: flex;
     flex-direction: row;
-    width: 100%;
   }
-  .pic-title .jassy-title .bio-pic {
-    display: flex;
-    flex-direction: row;
+  .hero-container {
+    display: grid;
     width: 100%;
   }
 }
-
 /*Desktop---------------------->*/
 @media (min-width: 900px) {
-  .container {
+  body {
     display: flex;
-    flex-direction: column;
-    max-width: 1200px;
-    width: 100%;
+    margin: 16px;
   }
-  ul .navbar {
+  .navbar {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    justify-content: space-evenly;
   }
-  .pic-title .jassy-title .bio-pic {
-    display: flex;
+  .hero-container {
+    display: grid;
     flex-direction: row;
-    width: 100%;
+  }
+  .rebel-video {
+    max-height: 500px;
   }
 }
