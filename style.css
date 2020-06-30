@@ -39,9 +39,6 @@ body {
   font-family: "Oswald", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
 }
-header {
-  display: flex;
-}
 h2 {
   color: blue;
   margin-top: 40px;
@@ -76,23 +73,18 @@ img {
   width: 100%;
 }
 /* base styles */
-.navbar {
+.navbar-list {
   background: lightblue;
-  position: fixed;
-  padding: 1rem;
-  justify-content: space-between;
+  position: flex;
   font-family: "Lato";
   font-weight: 700;
+  list-style: none;
 }
 .my-skills-section {
   display: grid;
-
 }
 /* layout styles */
-.navbar > li {
-  list-style: none;
-}
-.navbar li:hover {
+.navbar-item li:hover {
   background-color: skyblue;
 }
 .hero-title {
@@ -118,6 +110,13 @@ img {
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.bio-description {
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  width: 100%; 
+}
 .podcast-description {
   margin: 0 auto;
   padding-bottom: 10px;
@@ -138,14 +137,6 @@ img {
   width: 500px;
   height: 500px;
 }
-.sculptures, .drawings {
-  width: 100%;
-  flex-flow: column;
-}
-.drawings {
-  margin-left: 3rem;
-  margin-top: 4em;
-}
 .to-listen {
   display: flex;
   flex-direction: column;
@@ -153,13 +144,6 @@ img {
   margin-left: 3rem;
   animation-name: myname;
   animation-duration: 4s;
-}
-.fliers {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-  margin-top: 4em;
 }
 .footer {
   border-style: dotted;
@@ -192,10 +176,6 @@ a {
     display: flex;
     flex-direction: column;
   }
-  ul .navbar {
-    display: flex;
-    flex-direction: row;
-  }
   .hero-container {
     display: grid;
     width: 100%;
@@ -207,9 +187,9 @@ a {
     display: flex;
     margin: 16px;
   }
-  .navbar {
+  .navbar-list> li {
     display: flex;
-    justify-content: space-evenly;
+    list-style: none;
   }
   .hero-container {
     display: grid;
