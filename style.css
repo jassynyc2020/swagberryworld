@@ -1,4 +1,4 @@
-/* base styles */
+/* Global styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -23,7 +23,9 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#00dbff",GradientType=1);
 }
-/* Global styles */
+body, html {
+  display: grid;
+}
 @keyframes mymove {
   50% {
     text-indent: 170px;
@@ -46,14 +48,11 @@ h2 {
   font-weight: 900;
   font-size: 5rem;
   display: flex;
-  margin-left: 16px;
   font-family: "Lato";
   text-align: center;
   animation: mymove 5s infinite;
 }
-.container {
-  margin: 5rem; 
-}
+
 p {
   line-height: 1.5;
   background-color: fuchsia;
@@ -96,7 +95,7 @@ img {
 }
 .logo {
   background-color: fuchsia;
-  width: 150px;
+  width: 100%;
   border: 5px solid white;
 }
 .btn {
@@ -127,8 +126,7 @@ img {
 .residency-description,.bio-description {
   background-color: fuchsia;
   border-radius: 40px;
-  margin: 50px;
-  padding: 1em;
+  /* margin: 56px; */
   font-size: 20px;
   width: 100%;  
 }
@@ -138,10 +136,6 @@ img {
   height: 500px;
 }
 .to-listen {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-left: 3rem;
   animation-name: myname;
   animation-duration: 4s;
 }
@@ -153,47 +147,33 @@ img {
   background-color: ghostwhite;
   color: fuchsia;
   width: 100%;
-  padding: 10px;
 }
 .bio-pic > img {
-  width: 250px;
+  width: 100%;
+  height: auto;
   border-radius: 20%;
-  display: flex;
-  flex-direction: column;
   box-shadow: 10px 8px 10px 8px rgba(0, 0, 0, 0.2),
     0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-a {
+/* a {
   text-decoration: none;
   font-size: 2rem;
   display: -webkit-inline-flex;
   flex-direction: column;
   padding: 0.15em;
-}
+} */
 /*Tablet---------------------->*/
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   body {
     display: flex;
-    flex-direction: column;
   }
-  .hero-container {
-    display: grid;
-    width: 100%;
-  }
-}
 /*Desktop---------------------->*/
 @media (min-width: 900px) {
-  body {
+  body, html {
     display: flex;
-    margin: 16px;
   }
-  .navbar-list> li {
+  .navbar-item {
     display: flex;
-    list-style: none;
-  }
-  .hero-container {
-    display: grid;
-    flex-direction: row;
   }
   .rebel-video {
     max-height: 500px;
