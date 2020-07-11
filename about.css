@@ -1,4 +1,4 @@
-/* base styels */
+/* base styles */
 * {
   box-sizing: border-box;
 }
@@ -6,7 +6,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  width: 100%;
   font-family: "lato";
   color: white;
   background: rgb(224, 157, 227);
@@ -29,50 +28,44 @@ html {
 }
 p {
   display: flex;
-  flex-direction: column;
   margin-top: 1em;
   color: white;
   font-size: 2rem;
   font-weight: 800;
 }
 /* layout styles */
+.navbar-list {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
 .navbar-item > li {
   list-style: none;
 }
 .navbar-item {
-  color: white;
+  color: fuchsia;
 }
 .navbar-item li:hover {
   background-color: blue;
 }
 .heading-title {
-  text-shadow: 2px 2px;
-  align-items: center;
   color: blue;
   font-size: 4rem;
 }
 /* blocks */
-.header {
-  display: flex;
-  flex-direction: column;
-  margin: 20px auto;
-  padding: 0 30px;
-  max-width: 1200px;
-  margin-bottom: 1em;
-}
 .navbar-container {
-  display: flex;
+  position: fixed;
   width: 100%;
 }
 .navbar-list {
   background: lightblue;
-  position: fixed;
   font-family: "Lato";
   font-weight: 700;
 }
 .about-container {
-  margin-top: 100px;
+  margin-top: 200px;
 }
+/* Tablet styles */
 @media screen and (min-width: 550px) {
   body {
     display: flex;
@@ -81,6 +74,7 @@ p {
     font-size: 8rem;
   }
 }
+/* Desktop styles */
 @media screen and (min-width: 1000px) {
   body {
     display: flex;
