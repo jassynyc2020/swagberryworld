@@ -6,6 +6,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: "lato";
   color: white;
   background: rgb(224, 157, 227);

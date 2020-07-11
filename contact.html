@@ -10,46 +10,48 @@
   </head>
   <body>
     <nav>
-      <ul class="navbar container">
-        <li>
-          <a class="nav-about" href="./about.html">About</a>
+      <ul class="navbar-container">
+        <li class="navbar-link">
+          <a class="navbar-item" href="./about.html">About</a>
         </li>
-        <li>
-          <a class="home" href="./index.html">Home</a>
+        <li class="navbar-link">
+          <a class="navbar-item" href="./index.html">Home</a>
         </li>
-     </ul>
+      </ul>
    </nav> 
     <div class="hero-container">
       <img class="logo-pic" src="./Images/logo-swagberry.jpeg" alt="logo">
-      <section class="contact-section">
-      <h1>Contact Me</h1>
-      <h3>Send me a message and I will respond as soon as possible.</h3>
-      <form class="contact" action="./contact.html">
-        <label class="label" for="name">
-          <input 
-          type="text"
-          placeholder="Name"
-          class="name"
-          required/>
-        </label>
-        <!-- Email -->
-        <label class="label" for="email"> 
-          <input 
-          type="text" 
-          placeholder="Email"
-          class="email"
-          required />
-        </label>
-        <!-- Message -->
-        <label class="label" for="message">
-          <input 
-          type="text"
-          placeholder="Message" 
-          class="message"
-          required />
-        </label> <br>
-        <button>Submit</button>
-      </form>
-    </section>
+      <div class="contact-section">
+        <h1 class="contact-me">Contact Me</h1>
+        <h3 class="contact-message">Send me a message and I will respond as soon as possible.</h3>
+      </div>
+      <div class="contact-information-containter">
+        <div class="contact-input-boxes">
+          <form class="contact" action="./contact.html">
+            <label class="label" for="name">
+            <input 
+            type="text"
+            placeholder="Name"
+            class="name"
+            required/>
+            </label>
+            <label class="label" for="email"> 
+            <input 
+            type="text" 
+            placeholder="Email"
+            class="email"
+            required />
+            </label>
+            <label class="label" for="message">
+            <input 
+            type="text"
+            placeholder="Message" 
+            class="message"
+            required />
+            </label> <br>
+            <button>Submit</button>
+          </div>
+          </form>
+      </div>
   </body>
 </html>
