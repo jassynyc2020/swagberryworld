@@ -1,8 +1,6 @@
 /* Global styles */
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 body {
   background: rgb(224, 157, 227);
@@ -23,12 +21,15 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#00dbff",GradientType=1);
 }
-body, html {
+body,
+html {
   display: grid;
+  margin: 0;
+  padding: 0;
 }
 @keyframes mymove {
   50% {
-    text-indent: 170px;
+    text-indent: 100px;
   }
 }
 @font-face {
@@ -41,7 +42,13 @@ body, html {
   font-family: "Oswald", sans-serif;
   src: url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Oswald&display=swap");
 }
+h1 {
+  font-family: "Lato";
+  font-size: 5rem;
+  color: white;
+}
 h2 {
+  justify-content: center;
   color: blue;
   margin-top: 40px;
   margin-bottom: 40px;
@@ -50,9 +57,7 @@ h2 {
   display: flex;
   font-family: "Lato";
   text-align: center;
-  animation: mymove 5s infinite;
 }
-
 p {
   line-height: 1.5;
   background-color: fuchsia;
@@ -63,18 +68,31 @@ p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
 }
-h1 {
-  font-family: "Lato";
-  font-size: 5rem;
-  color: white;
-}
 img {
   width: 100%;
 }
 /* base styles */
-.navbar-list {
-  background: lightblue;
-  position: flex;
+.navbar-container {
+  display: flex;
+  background: rgb(224, 157, 227);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(0, 219, 255, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(0, 219, 255, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(224, 157, 227, 1) 36%,
+    rgba(0, 219, 255, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#00dbff",GradientType=1);
+  width: 100%;
+  position: fixed;
   font-family: "Lato";
   font-weight: 700;
   list-style: none;
@@ -83,15 +101,23 @@ img {
   display: grid;
 }
 /* layout styles */
+.navbar-list {
+  width: 100%;
+  padding: 15px;
+}
+.navbar-item {
+  font-size: 30px;
+  text-decoration: none;
+}
 .navbar-item li:hover {
   background-color: skyblue;
 }
 .hero-title {
   width: 100%;
+  text-align: center;
   font-family: cursive;
   font-size: 100px;
-  align-content: center;
-  margin-top: 18rem;
+  padding-top: 50px;
 }
 .logo {
   background-color: fuchsia;
@@ -109,26 +135,40 @@ img {
   margin: 0 auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.bio-pic > img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%;
+  box-shadow: 10px 8px 10px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.bio-title {
+  justify-content: center;
+}
 .bio-description {
   margin: 0 auto;
   padding-bottom: 10px;
   text-align: center;
   font-size: 30px;
-  width: 100%; 
+  width: 100%;
+}
+#theatre,
+#painting {
+  justify-self: center;
 }
 .podcast-description {
   margin: 0 auto;
   padding-bottom: 10px;
   text-align: center;
   font-size: 30px;
-  width: 100%; 
+  width: 100%;
 }
-.residency-description,.bio-description {
+.residency-description,
+.bio-description {
   background-color: fuchsia;
   border-radius: 40px;
-  /* margin: 56px; */
   font-size: 20px;
-  width: 100%;  
+  width: 100%;
 }
 .rebel-video {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -140,6 +180,8 @@ img {
   animation-duration: 4s;
 }
 .footer {
+  display: grid;
+  justify-content: center;
   border-style: dotted;
   border-radius: 50px;
   font-size: 20px;
@@ -148,34 +190,24 @@ img {
   color: fuchsia;
   width: 100%;
 }
-.bio-pic > img {
-  width: 100%;
-  height: auto;
-  border-radius: 20%;
-  box-shadow: 10px 8px 10px 8px rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-/* a {
-  text-decoration: none;
-  font-size: 2rem;
-  display: -webkit-inline-flex;
-  flex-direction: column;
-  padding: 0.15em;
-} */
 /*Tablet---------------------->*/
 @media (min-width: 700px) {
-  body {
-    display: flex;
+  .navbar-list {
+    justify-content: space-around;
+    width: 100%;
+    font-size: 20px;
   }
+}
 /*Desktop---------------------->*/
 @media (min-width: 900px) {
-  body, html {
-    display: flex;
-  }
-  .navbar-item {
-    display: flex;
+  .navbar-list {
+    width: 100%;
+    font-size: 20px;
   }
   .rebel-video {
     max-height: 500px;
+  }
+  .footer {
+    justify-content: center;
   }
 }
