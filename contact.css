@@ -38,8 +38,16 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e09de3",endColorstr="#9a00ff",GradientType=1);
 }
 .navbar-container,
-.navbar-link {
+.navbar-link,
+.navbar-item {
   display: grid;
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+}
+.navbar-container {
+  padding: 20px;
+  font-size: 1.5em;
 }
 .hero-container {
   display: grid;
